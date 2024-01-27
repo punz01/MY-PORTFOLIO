@@ -1,0 +1,364 @@
+/*NAVIGATION*/
+
+.topnav {
+    background-color:transparent;
+    overflow: hidden;
+    width: 800px;
+    margin: auto;
+}
+.topnav a {
+    float: none;
+    color: red;
+    text-align: center;
+    padding: 14px 14px;
+    text-decoration: none;
+    font-size: 33px;
+    text-transform: uppercase;
+    font-family:'Courier New', Courier, monospace;
+     
+  }
+  .topnav a:hover {
+    background-color: red;
+    color: antiquewhite;
+  }
+  .topnav a.active {
+    background-color: red;
+    color: antiquewhite;
+  }
+/*HOME*/
+
+body{
+    background-color: antiquewhite
+  }
+h1{
+    text-align: center;
+    margin-top: 60px;
+
+}
+p{
+    text-align: center;
+    font-size: 18px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.box{
+    margin:auto;
+    width: 45em;
+    border: 3px solid red;
+    box-shadow: 9px 6px 4px red;
+    margin-right: 140px;
+    margin-top: 70px;
+    
+}
+/*IMAGE*/
+
+.image{
+    width:30%;
+    height: 1vh;
+    margin-top: -110px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.image img{
+    height:350px;
+    width: 300px;
+    border-radius: 50%;
+    border: 10px solid antiquewhite;
+}
+/*ICONS*/
+.icon{
+    display:grid;
+    place-items: center;
+}
+.button{
+    display:inline-block;
+    width: 60px;
+    height: 50px;
+    background-color: antiquewhite;
+    border-radius: 50px;
+    line-height: 60px;
+    text-align: center;
+    box-shadow: 0px 30px 10px rgba(0,0,0,0.1);
+    margin-top: 180px;
+    margin-left: 45px;
+}
+.wrapper .button .icon{
+    font-size: 35px;
+    margin-top: -3px;
+}
+.wrapper .button:hover{
+    width:100px;
+    transition: 0.7s;
+}
+.fa-facebook{
+    color: black;
+}
+.fa-instagram{
+    color: black;
+}
+.fa-github{
+    color: black;
+}
+/*SKILLS*/
+.skill h2{
+    text-align: center;
+    color: red;
+}
+.skill h3{
+    margin: 5px;
+    color: black;
+}
+.skill{
+    width: 300px;
+    margin: 150px auto;
+    margin-left: 50px;
+    color: red;
+    padding: 30px;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    margin-top: 50px;
+}
+
+.skill li{
+    margin: 20px 0;
+    padding: 10px;
+}
+.bar{
+    background: antiquewhite;
+    display:block;
+    height: 10px;
+    border: 1px solid rgba(0,0,0,0.3);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+
+}
+.bar:hover{
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+.bar span{
+    height: 20px;
+    float: left;
+    background: linear-gradient(135deg, antiquewhite, red);
+}
+.html{
+    width: 70%;
+    animation: html 3s;
+}
+.ui{
+    width: 80%;
+    animation: html 3s;
+}
+.team{
+    width: 90%;
+    animation: team 3s;
+}
+.create{
+    width: 70%;
+    animation: create 3s;
+}
+.detail{
+    width: 80%;
+    animation: detail 3s;
+}
+@keyframes html{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 70%;
+    }
+}
+@keyframes ui{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 80%;
+    }
+}
+@keyframes team{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 90%;
+    }
+}
+@keyframes create{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 70%;
+    }
+}
+@keyframes detail{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 80%;
+    }
+}
+
+/*EDUCATION*/
+.educ h2{
+    text-align: center;
+    color: red;
+}
+.educ h3{
+    margin: 5px;
+    color:black;
+}
+.educ{
+    width: 365px;
+    margin: 150px auto;
+    margin-left: 470px;
+    margin-top: -490px;
+    color: red;
+    padding: 30px;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+.educ li{
+    color:red;
+}
+
+/*HOBBIES*/
+
+.hobb h2{
+    text-align: center;
+    color: red;
+}
+.hobb h3{
+    margin: 5px;
+    color:black;
+}
+.hobb{
+    width: 300px;
+    margin: 150px auto;
+    margin-left: 950px;
+    margin-top: -580px;
+    color: red;
+    padding: 30px;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+.games{
+    width: 80%;
+    animation: html 3s;
+}
+.bball{
+    width: 70%;
+    animation: html 3s;
+}
+.music{
+    width: 90%;
+    animation: team 3s;
+}
+.photo{
+    width: 90%;
+    animation: create 3s;
+}
+.design{
+    width: 90%;
+    animation: detail 3s;
+}
+@keyframes games{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 80%;
+    }
+}
+@keyframes bball{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 70%;
+    }
+}
+@keyframes music{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 90%;
+    }
+}
+@keyframes photo{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 90%;
+    }
+}
+@keyframes design{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 90%;
+    }
+}
+
+/*MEDIA BREAKPOINT*/
+
+@media (max-width: 600px){
+    .box{
+        margin-left: 245px;
+        width: 20em;
+        margin-top: 10px;
+    }
+    .button{
+        margin-left: 2px;
+    }
+    .image{
+        margin-left: 30px;
+        margin-top: -250px;
+    }
+    p{
+        text-align: center;
+        font-size: 17px;
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    .skill{
+        margin-left: 130px;
+    }
+    .educ{
+        margin-top: -80px;
+        margin-left: 100px;
+    }
+    .educ li{
+        font-size: 20px;
+    }
+    .hobb{
+        margin-top: -90px;
+        margin-left: 130px;
+    }
+    .topnav a{
+        font-size: 23px;
+      }
+    h1{
+        margin-top: 100px;
+    }
+}
+@media (max-width: 1540px){
+    .box{
+        margin-left: 500px;
+    }
+    .button{
+        margin-left: 60px;
+    }
+    .hobb{
+        margin-left: 950px;
+    }
+    .educ{
+        margin-left: 480px;
+    }
+    .skill{
+        margin-left: 70px;
+    }
+}

@@ -1,0 +1,215 @@
+
+/*NAVIGATION*/
+
+.topnav {
+    background-color:transparent;
+    overflow: hidden;
+    width: 800px;
+    margin: auto;
+}
+.topnav a {
+    float: none;
+    color: red;
+    text-align: center;
+    padding: 14px 14px;
+    text-decoration: none;
+    font-size: 33px;
+    text-transform: uppercase;
+    font-family:'Courier New', Courier, monospace;
+    
+   
+  }
+  .topnav a:hover {
+    background-color: red;
+    color: antiquewhite;
+  }
+  .topnav a.active {
+    background-color: red;
+    color: antiquewhite;
+  }
+
+/*HOME*/
+
+body{
+  background-color: antiquewhite;
+}
+p{
+  text-align: center;
+  font-size: 20px;
+  font-family: 'Times New Roman', Times, serif;
+  color: black;
+}
+
+.container{
+  display: inline-block;
+}
+.text{
+  font-size: 6em;
+  margin-top: 120px;
+  margin-left: 100px;
+  letter-spacing: 5px;
+  color: black;
+  font-family: monospace;
+  border-right: 2px solid;
+  width: 76%;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: typing 1s,
+              cursor .4s step-end infinite alternate;
+}
+@keyframes cursor{
+  50%{
+    border-color: transparent;
+  }
+}
+
+@keyframes typing{
+  from{
+    width:0
+  }
+}
+.container-1{
+  display: inline-block;
+}
+.text-1{
+  font-size: 4em;
+  margin-left: 100px;
+  letter-spacing: 1px;
+  color: black;
+  margin-top: -80px;
+  font-family: monospace;
+  border-right: 2px solid;
+  width: 74%;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: typing 3.5s,
+              cursor .4s step-end infinite alternate;
+}
+@keyframes cursor{
+  50%{
+    border-color: transparent;
+  }
+}
+
+@keyframes typing{
+  from{
+    width: 0px
+  }
+}
+/*BUTTONS*/
+
+.button{
+  position: relative;
+  left: 35%;
+  background-color: red;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  text-transform: lowercase;
+  background-attachment: fixed;
+}
+
+.button-1{
+  position: relative;
+  left:35%;
+  background-color: red;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  text-transform: lowercase;
+  background-attachment: fixed;
+}
+
+/*MEDIA BREAKPOINT*/
+
+@media (max-width: 600px) {
+  .text{
+    font-size: 5em;
+    margin-top: 120px;
+    margin-left: 50px;
+    letter-spacing: 5px;
+    color: black;
+    font-family: monospace;
+    border-right: 2px solid;
+    width: 60%;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typing 1s,
+                cursor .4s step-end infinite alternate;
+  }
+  @keyframes cursor{
+    50%{
+      border-color: transparent;
+    }
+  }
+  
+  @keyframes typing{
+    from{
+      width:0
+    }
+  }
+  .container-1{
+    display: inline-block;
+  }
+  .text-1{
+    font-size: 4em;
+    margin-left: 5px;
+    letter-spacing: 1px;
+    color: black;
+    margin-top: -80px;
+    font-family: monospace;
+    border-right: 2px solid;
+    width: 73%;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typing 3s,
+                cursor .4s step-end infinite alternate;
+  }
+  @keyframes cursor{
+    50%{
+      border-color: transparent;
+    }
+  }
+  
+  @keyframes typing{
+    from{
+      width: 0px
+    }
+  }
+  p{
+  text-align: center;
+  margin-right: 220px;
+  font-size: 20px;
+  font-family: 'Times New Roman', Times, serif;
+  color: black;
+  }
+  .button{
+    margin-left: -130px;
+  }
+  .button-1{
+    margin-left: 30px;
+  }
+  .topnav a{
+    font-size: 23px;
+  }
+}
+  
+  
+
+
+
+
+  
+
