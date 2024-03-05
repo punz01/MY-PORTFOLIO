@@ -9,12 +9,39 @@
 </head>
 <body>
     <!--NAVIGATION-->
-    <nav class="topnav" id="myTopnav">
-        <a href="index.html" class="active">Home</a>
-        <a href="projects.html">Projects</a>
-        <a href="resume.html">Resume</a>
-        <a href="contact.html">Contact</a>
-        <a href="about.html">About</a>
+    <nav>
+        <div class="logo">
+            <a href="index.html">
+            <img src = "images/logo.png" class="hello">
+        </a>
+        </div>
+        <ul id="menuList">
+            <li><a class="active" href="index.html">HOME</a></li>
+            <li><a href="projects.html">PROJECTS</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+        </ul>
+        <div class="menu-icon">
+            <i class="fa-solid fa-bars" onclick="toggleMenu()"></i>
+        </div>
+    </nav>
+
+    <script>
+        let menuList = document.getElementById("menuList")
+        menuList.style.maxHeight = "0px";
+
+        function toggleMenu(){
+            if(menuList.style.maxHeight == "0px")
+            {
+                menuList.style.maxHeight = "300px";
+            }
+            else{
+                menuList.style.maxHeight = "0px";
+            }
+        }
+    </script>
+
+    <script src = "https://kit.fontawesome.com/f8e1a90484.js" crossorigin="anonyomous"></script>
     <!--HOME-->
     <div class ="container"></div>
         <h1 class ="text">Hello World!,</h1>
@@ -22,17 +49,17 @@
     <div class ="container-1"></div>
         <h2 class ="text-1">I am <span style="color: red;">Aaron Punzalan.</span></h2>
     </div>
-        <p>Welcome to my Portfolio! Dive into this portfolio to uncover a compilation of my projects, resume, and all the details about who I am. 
-            It goes beyond being a mere display of my work; it's an open invitation to connect. If any of the projects resonate with you or if you have thoughts to share, 
-            I'm eager to hear from you. Let's come together, spark innovation, and craft something truly exceptional!</p>
+        <p>Welcome to my Portfolio! <br>Dive into this portfolio to uncover a compilation of my projects, resume, and all the details about who I am. 
+            <br>It goes beyond being a mere display of my work; it's an open invitation to connect. <br>If any of the projects resonate with you or if you have thoughts to share, 
+            I'm eager to hear from you. <br>Let's come together, spark innovation, and craft something truly exceptional!</p>
         <p>Thank you for looking into my creative portfolio. Enjoy the journey!</p>   
     </nav>
     <!--BUTTONS-->
         <a href="projects.html">
-        <button class="button">View my projects -></button> 
+        <button class="button">View my projects</button> 
          </a>
-        <a href="resume.html">
-        <button class="button-1">View my resume -></button>
+        <a href="images/my-resume.pdf" download class="btn1 btn2">
+        <button class="button-1">Download my resume</button>
         </a>
    
 </body>

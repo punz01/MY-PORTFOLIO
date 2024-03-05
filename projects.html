@@ -9,149 +9,98 @@
 </head>
 <body>
      <!--NAVIGATION-->
-     <nav class="topnav" id="myTopnav">
-        <a href="index.html">Home</a>
-        <a href="projects.html" class="active">Projects</a>
-        <a href="resume.html">Resume</a>
-        <a href="contact.html">Contact</a>
-        <a href="about.html">About</a>
-    </nav>
-    <h1>MY PROJECTS</h1>
-    <!--FIRST PROJECT-->
-    <div class="first">
-    <h3>PROJECT 1: CAR GUYS CAVE</h3>   
-    </div>
-    <div class=desc-1>
-        <p>This project was made under the subject Dynamic Web Applications and Development Tools. It is a website  about Japanese Domestic Market cars.
-            I post the cars' name, history, price, and engine specifications. This project was made in Wordpress and this is also the first time that I 
-            have used of that website. It's a open-source software where in you can start making your websites. I had a hard time using it at first but as I designed more pages, I got the 
-            hang of it and I enjoyed using it.</p>
-        <a href="https://carguyscave0.wordpress.com/" target="_blank">
-            <button class="first-btn">view more</button> 
+     <nav>
+        <div class="logo">
+            <a href="index.html">
+            <img src = "images/logo.png" class="hello">
         </a>
-    </div>
-    <div class="slider">
-        <div class="images">
-            <input type="radio" name="slide" id="img1" checked>
-            <input type="radio" name="slide" id="img2">
-            <input type="radio" name="slide" id="img3">
+        </div>
+        <ul id="menuList">
+            <li><a href="index.html">HOME</a></li>
+            <li><a class="active" href="projects.html">PROJECTS</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+        </ul>
+        <div class="menu-icon">
+            <i class="fa-solid fa-bars" onclick="toggleMenu()"></i>
+        </div>
+    </nav>
 
-            <img src="images/image1.png" class="m1" alt="img1">
-            <img src="images/image2.png" class="m2" alt="img2">
-            <img src="images/image3.png" class="m3" alt="img3">
-        </div>
-        <div class="dots">
-            <label for="img1"></label>
-            <label for="img2"></label>
-            <label for="img3"></label>
-        </div>
-    </div>
-    <!--SECOND PROJECT-->
-    <div class="second">
-        <h3>PROJECT 2: RAWWPHOTOG</h3>   
-    </div>
-    <div class=desc-2>
-        <p>This project was made under the subject Web Search Engine Optimization and Analytics. It is a website  about Photography.
-            We post different blogs about photography or something related to it. This project was also made in Wordpress and this is the second time that I 
-            have used of this website. This is a group project, My task is to design and arrange the pages to make it more engaging. The purpose of this project is 
-            to increase the website's search engine ranking and to make the analytics increase.</p>
-            <a href="https://rawwphotog.com/" target="_blank">
-                <button class="second-btn">view more</button> 
-            </a>
-        </p>
-    </div>
-    <div class="slider-1">
-        <div class="images">
-            <input type="radio" name="slide" id="img4" checked>
-            <input type="radio" name="slide" id="img5">
-            <input type="radio" name="slide" id="img6">
+    <script>
+        let menuList = document.getElementById("menuList")
+        menuList.style.maxHeight = "0px";
 
-            <img src="images/image4.png" class="m4" alt="img4">
-            <img src="images/image5.png" class="m5" alt="img5">
-            <img src="images/image6.png" class="m6" alt="img6">
-        </div>
-        <div class="dots">
-            <label for="img4"></label>
-            <label for="img5"></label>
-            <label for="img6"></label>
-        </div>
-    </div>
-    <!--THIRD PROJECT-->
-    <div class="third">
-        <h3>PROJECT 3: KINGS OF THE COURT CAMP</h3>   
-    </div>
-    <div class=desc-3>
-        <p>This project was made under the subject Web Technologies. This project is all about basketball.
-            In this website you can enroll yourself and experience a real life basketball training at your homes. There are coaches who are willing to give you tutorials and drills schedules
-            This project was made in visual studio code and the programming language tha I used was HTML & CSS. This is the first time I made a website with any programming language. I had 
-            a hard time using these languages that time because I am not faimiliar with it. Until now that I have created many website using that language, I still am learning new properties in CSS.</p>
-        </p>
-    </div>
-    <div class="slider-2">
-        <div class="images">
-            <input type="radio" name="slide" id="img7" checked>
-            <input type="radio" name="slide" id="img8">
+        function toggleMenu(){
+            if(menuList.style.maxHeight == "0px")
+            {
+                menuList.style.maxHeight = "300px";
+            }
+            else{
+                menuList.style.maxHeight = "0px";
+            }
+        }
+    </script>
 
-            <img src="images/image7.png" class="m7" alt="img7">
-            <img src="images/image8.png" class="m8" alt="img8">
-        </div>
-        <div class="dots">
-            <label for="img7"></label>
-            <label for="img8"></label>
-        </div>
-    </div>
-    <!--FOURTH PROJECT-->
-    <div class="fourth">
-        <h3>PROJECT 4: VICTORY FIT</h3>   
-    </div>
-    <div class=desc-4>
-        <p>This project was made under the collaboration of two subjects which is Dynamic Web Applications and Development Tools and Information Management . This website is all about Gym.
-            Our website has many features. After signing up, you can choose a coach who is willing to give you workouts and per day schedules. You can also go to our store and buy gym supplements.
-            This project was made in visual studio code and the programming language that we used was HTML,CSS,PHP and MySQL. This is the first time I encounter PHP and MySQP that is why I had a hard time using it. My role in our group is to
-            fix the front end and make it more engaging.</p>
-        </p>
-    </div>
-    <div class="slider-3">
-        <div class="images">
-            <input type="radio" name="slide" id="img9" checked>
-            <input type="radio" name="slide" id="img10">
-            <input type="radio" name="slide" id="img11">
+    <script src = "https://kit.fontawesome.com/f8e1a90484.js" crossorigin="anonyomous"></script>
 
-            <img src="images/image9.png" class="m9" alt="img9">
-            <img src="images/image10.png" class="m10" alt="img10">
-            <img src="images/image11.png" class="m11" alt="img11">
+    <div class="container">
+        <div class="title">
+            <h1>My Projects</h1>
         </div>
-        <div class="dots">
-            <label for="img9"></label>
-            <label for="img10"></label>
-            <label for="img11"></label>
-        </div>
-    </div>
-    <!--FIFTH PROJECT-->
-    <div class="fifth">
-        <h3>PROJECT 5: PPAR REVIEW</h3>   
-    </div>
-    <div class=desc-5>
-        <p>This project was made under the subject Advance Databse Systems. Our website is inspired by the famous movie rating website which is rotten tomatoes. Our website purpose is for the user to give ratings to a anime. They can choose
-            from our groups chosen genres. After signing up they can rate & review their chosen anime. This project was also made in visual studio code the programming language that we used was also HTML,CSS,PHP and MySQL. My role in our group is the 
-            front end and my task is to design every pages.</p>
-        </p>
-    </div>
-    <div class="slider-4">
-        <div class="images">
-            <input type="radio" name="slide" id="img12" checked>
-            <input type="radio" name="slide" id="img13">
-            <input type="radio" name="slide" id="img14">
+            <img src="images/image1.png" class="proj-1">
+        <div class="text-1">
+            <h2>Project 1: <span style="color: red;">Car Guys Cave</span></h2>
+            <p>This project, created for Dynamic Web Applications and Development Tools, centers on Japanese Domestic Market cars. I share information including the car's name, history, price, and engine specifications. Developed in Wordpress, it's my first experience with the platform. Wordpress is an open-source software enabling users to easily build websites. Although initially challenging, as I designed more pages, I grew comfortable and began to enjoy using it.
 
-            <img src="images/image12.png" class="m12" alt="img12">
-            <img src="images/image13.png" class="m13" alt="img13">
-            <img src="images/image14.png" class="m14" alt="img14">
-        </div>
-        <div class="dots">
-            <label for="img12"></label>
-            <label for="img13"></label>
-            <label for="img14"></label>
+
+
+
+            </p>
+                <div class="social">
+                    <a class="link" href="https://carguyscave0.wordpress.com/" target ="_blank"><i class="fa solid fa-link"></i></a>
+                </div>
         </div>
     </div>
+    <div class="container">
+            <img src="images/image4.png" class="proj-1">
+        <div class="text-1">
+            <h2>Project 2: <span style="color: red;">Raw Photography</span></h2>
+            <p>This project, undertaken in the Web Search Engine Optimization and Analytics course, focuses on a photography website. We publish various photography-related blogs. Utilizing Wordpress for the second time, my role in this group project involves designing and arranging pages to enhance engagement. The aim is to boost the website's search engine ranking and increase analytics.</p>
+                <div class="social">
+                    <a class="link" href="https://rawwphotog.com/" target ="_blank"><i class="fa solid fa-link"></i></a>
+                </div>
+        </div>
+    </div>
+    <div class="container">
+            <img src="images/image7.png" class="proj-1">
+        <div class="text-1">
+            <h2>Project 3: <span style="color: red;">Kings of the Court Camp</span></h2>
+            <p>This project, developed under the Web Technologies subject, allows users to enroll and access basketball training from home. Coaches offer tutorials and drill schedules. Created using HTML & CSS in Visual Studio Code, it was my first website project, and despite initial difficulties due to unfamiliarity with the languages, I continue to learn new CSS properties with each new website I create.</p>
+                <div class="social">
+                    <a class="link" href="https://github.com/punz01" target ="_blank"><i class="fab fa-github"></i></a>
+                </div>
+        </div>
+    </div>
+    <div class="container">
+            <img src="images/image9.png" class="proj-1">
+        <div class="text-1">
+            <h2>Project 4: <span style="color: red;">Victory Fit</span></h2>
+            <p>This collaborative project merges Dynamic Web Applications, Development Tools, and Information Management, centering on a Gym website. Users can sign up, select coaches for personalized workouts and schedules, and purchase supplements from our store. Developed in Visual Studio Code, we employed HTML, CSS, PHP, and MySQL. Initially challenging, my role in the group is to enhance frontend engagement.</p>
+                <div class="social">
+                    <a class="link" href="https://github.com/punz01" target ="_blank"><i class="fab fa-github"></i></a>
+                </div>
+        </div>
+    </div>
+    <div class="container">
+            <img src="images/image12.png" class="proj-1">
+        <div class="text-1">
+            <h2>Project 5: <span style="color: red;">PPAR Review</span></h2>
+            <p>This project, inspired by the renowned movie rating site Rotten Tomatoes, focuses on anime ratings under the Advanced Database Systems subject. Users can rate and review anime within our selected genres after signing up. Developed in Visual Studio Code, we utilized HTML, CSS, PHP, and MySQL. My role within the group is frontend design, responsible for crafting each page.</p>
+                <div class="social">
+                    <a class="link" href="https://github.com/punz01" target ="_blank"><i class="fab fa-github"></i></a>
+                </div>
+        </div>
+    </div>
+    
 </body>
 </html>

@@ -1,371 +1,165 @@
 /*NAVIGATION*/
 
-.topnav {
-    background-color:transparent;
-    overflow: hidden;
-    width: 800px;
-    margin: auto;
-}
-.topnav a {
-    float: none;
-    color: red;
-    text-align: center;
-    padding: 14px 14px;
-    text-decoration: none;
-    font-size: 33px;
-    text-transform: uppercase;
-    font-family:'Courier New', Courier, monospace;
-    
-   
-  }
-  .topnav a:hover {
-    background-color: red;
-    color: antiquewhite;
-  }
-  .topnav a.active {
-    background-color: red;
-    color: antiquewhite;
-  }
-/*HOME*/
-h1{
-  text-align: center;
-  margin-top: 60px;
-}
-
-body{
-    background-color: antiquewhite
-}
-/*FIRST PROJECT*/
-.first h3{
-  margin-left: 170px;
-  margin-top: 90px;
-  color: red;
-  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  font-size: 25px;
-}
-
-.slider{
-  position: relative;
-  width: 50%;
-  overflow: hidden;
-  margin-left: 20px;
-  margin-top: -360px ;
-  border: 5px solid black;
-}
-.images{
+nav{
+  padding: 10px 30px;
   display: flex;
-  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  background-color: red;
+  position: relative;
+  height: 80px;
 }
-.images img{
-  height: 400px;
-  width: 100%;
-  transition: all 0.15s ease;
+
+nav ul{
+  display: flex;
+  gap: 30px;
 }
-.images input{
+
+nav ul li{
+  list-style-type: none;
+}
+
+nav ul li a{
+  text-decoration: none;
+  color: white;
+  font-size: 25px;
+  font-family:'Times New Roman', Times, serif;
+}
+
+.menu-icon{
   display: none;
 }
-.dots{
-  display: flex;
-  justify-content: center;
-  margin: 5px;
+
+.menu-icon i{
+  color: white;
+  font-size: 30px;
 }
-.dots label{
-  height: 15px;
-  width: 15px;
+
+.hello{
+  position: absolute;
+  height: 90px;
+  left: 0px;
+  width: 200px;
+  margin-top: -40px;
+}
+li a::after{
+  content: '';
+  width: 0;
+  height: 3px;
+  background-color: whitesmoke;
+  margin: auto;
+  display: block;
+}
+li a:hover::after{
+  width: 100%;
+  transition: width 0.3s linear;
+  margin-top: 8px;
+}
+
+li a:hover{
+  color: white;
+}
+
+li a.active{
+ color: black;
+}
+
+/*HOME*/
+
+body{
+    display: absolute;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: white;
+}
+.container .title{
+  width: 100%;
+  text-align: center;
+  margin-bottom: 50px;
+}
+.container .title h1{
+  text-transform: uppercase;
+  font-size: 35px;
+  color: black;
+  margin-top: 10px;
+}
+.container .title h1::after{
+  content:"";
+  height: 5px;
+  width: 100px;
+  background-color: red;
+  border-radius: 25px;
+  display: block;
+  margin: auto;
+}
+/*FIRST PROJ*/
+.container{
+  margin: 100px auto;
+  width: 75%;
+}
+.proj-1{
+  width: 550px;
+  height: 300px;
+  float: left;
+  border-radius: 10px;
+  border: 2px solid black;
+  margin-right: 20px;
+}
+.text-1 h2{
+  font-size: 30px;
+  margin-top: 50px;
+}
+.text-1 p{
+  font-size: 18px;
+  margin-top: -10px;
+}
+.container .social {
+  width: 10px;
+  clear: both;
+  margin-top: -10px;
+  text-align: right;
+  display: inline-block;
+}
+.container .social i{
+  color: white;
+  font-size: 20px;
+  height: 50px;
+  width: 50px;
   border-radius: 50%;
-  border: solid black 3px;
-  cursor: pointer;
-  transition: all 0.15s ease;
-  margin: 5px;
-}
-.dots label:hover{
-  background-color: red;
-}
-#img1:checked ~ .m1{
-  margin-left: 0;
-}
-#img2:checked ~ .m2{
-  margin-left: -100%;
-}
-#img3:checked ~ .m3{
-  margin-left: -200%;
-}
-.desc-1{
-  margin-left: 700px;
-  margin-top: 100px;
-  font-size: 22px;
+  line-height: 45px;
   text-align: center;
-  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
-.first-btn{
-  position: relative;
   background-color: red;
-  border: none;
+}
+.container .social i:hover{
+  transition: 1s ease;
+  transform: rotate(360deg);
   color: white;
-  padding: 15px 32px;
-  text-align: center;
-  display: inline-block;
-  font-size: 16px;
-  cursor: pointer;
-  text-transform: lowercase;
-  background-attachment: fixed;
-}
-/*SECOND PROJECT*/
-.second h3{
-  margin-left: 840px;
-  margin-top: 50px;
-  color: red;
-  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  font-size: 25px;
-}
-.slider-1{
-  position: relative;
-  width: 50%;
-  overflow: hidden;
-  margin-left: 650px;
-  margin-top: -370px;
-  border: 5px solid black;
-}
-#img4:checked ~ .m4{
-  margin-left: 0;
-}
-#img5:checked ~ .m5{
-  margin-left: -100%;
-}
-#img6:checked ~ .m6{
-  margin-left: -200%;
-}
-.desc-2{
-  margin-right: 680px;
-  margin-top: 100px;
-  font-size: 22px;
-  text-align: center;
-  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
-}
-.second-btn{
-  position: relative;
-  background-color: red;
-  border: none;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  display: inline-block;
-  font-size: 16px;
-  cursor: pointer;
-  text-transform: lowercase;
-  background-attachment: fixed;
-}
-/*THIRD PROJECT*/
-.third h3{
-  margin-left: 100px;
-  margin-top: 60px;
-  color: red;
-  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  font-size: 25px;
-}
-.slider-2{
-  position: relative;
-  width: 50%;
-  overflow: hidden;
-  margin-left: 20px;
-  margin-top: -360px;
-  border: 5px solid black;
-}
-#img7:checked ~ .m7{
-  margin-left: 0;
-}
-#img8:checked ~ .m8{
-  margin-left: -100%;
-}
-.desc-3{
-  margin-left: 700px;
-  margin-top: 100px;
-  font-size: 22px;
-  text-align: center;
-  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  
-}
-/*FOURTH PROJECT*/
-.fourth h3{
-  margin-left: 840px;
-  margin-top: 50px;
-  color: red;
-  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  font-size: 25px;
-}
-.slider-3{
-  position: relative;
-  width: 50%;
-  overflow: hidden;
-  margin-left: 650px;
-  margin-top: -350px;
-  border: 5px solid black;
-}
-#img9:checked ~ .m9{
-  margin-left: 0;
-}
-#img10:checked ~ .m10{
-  margin-left: -100%;
-}
-#img11:checked ~ .m11{
-  margin-left: -200%;
-}
-.desc-4{
-  margin-right: 700px;
-  margin-top: 100px;
-  font-size: 22px;
-  text-align: center;
-  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  
-}
-/*FIFTH PROJECT*/
-.fifth h3{
-  margin-left: 210px;
-  margin-top: 50px;
-  color: red;
-  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  font-size: 25px;
-}
-.slider-4{
-  position: relative;
-  width: 50%;
-  overflow: hidden;
-  margin-left: 20px;
-  margin-top: -300px;
-  border: 5px solid black;
-}
-#img12:checked ~ .m12{
-  margin-left: 0;
-}
-#img13:checked ~ .m13{
-  margin-left: -100%;
-}
-#img14:checked ~ .m14{
-  margin-left: -200%;
-}
-.desc-5{
-  margin-left: 700px;
-  margin-top: 100px;
-  font-size: 22px;
-  text-align: center;
-  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  
+  background-color: black
 }
 
 /*MEDIA BREAKPOINT*/
 
 @media (max-width: 600px){
-  .topnav a{
-    font-size: 23px;
+  nav ul{
+    position: absolute;
+    top: 70px;
+    left: 0;
+    right: 0;
+    flex-direction: column;
+    text-align: center;
+    background: red;
+    gap: 0;
+    overflow: hidden;
   }
-  /*FIRST PROJECT*/
-    .first h3{
-    margin-left: 120px;
-    margin-top: 70px;
+  nav ul li{
+    padding: 20px;
   }
-  .slider{
-    width: 95%;
-    margin-top: -750px;
+  .menu-icon{
+    display: block;
   }
-  .dots label{
-    height: 20px;
-    width: 20px;
+  #menuList{
+    transition: all 0.5s;
   }
-  .desc-1{
-    margin-left: 10px;
-    margin-top: 500px;
-  }
-   /*SECOND PROJECT*/
-  .second h3{
-    margin-left: 120px;
-    margin-top: 400px;
-  }
-  .slider-1{
-    width: 95%;
-    margin-top:-770px;
-    margin-left: 20px;
-  }
-  .desc-2{
-    margin-top: 490px;
-    margin-right: -10px;
-  }
-   /*THIRD PROJECT*/
-   .third h3{
-    margin-left: 50px;
-    margin-top: 400px;
-  }
-  .slider-2{
-    width: 95%;
-    margin-top: -800px;
-    margin-left: 20px;
-  }
-   .desc-3{
-     margin-top: 510px;
-     margin-left: 20px;
-   }
-   /*FOURTH PROJECT*/
-   .fourth h3{
-    margin-top: 400px;
-    margin-left: 150px;
-  }
-  .slider-3{
-    margin-left: 10px;
-    width: 95%;
-    margin-top: -790px;
-  }
-  .desc-4{
-    margin-right: 20px;
-    margin-top: 510px;
-  }
-   /*FIFTH PROJECT*/
-   .fifth h3{
-     margin-top: 400px;
-     margin-left: 130px;
-   }
-   .slider-4{
-    margin-left: 10px;
-    width: 95%;
-    margin-top: -740px;
-   }
-   .desc-5{
-     margin-top: 500px;
-     margin-left: 10px;
-   }
+ 
 }
-@media (max-width: 1540px){
-  /*FIRST PROJ*/
-  .slider{
-    margin-top: -350px;
-  }
-  .desc-1{
-    margin-left: 780px;
-  }
-   /*SECOND PROJ*/
-  .slider-1{
-    margin-top: -395px;
-  }
-  .desc-2{
-    margin-right: 855px;
-  }
-  /*THIRD PROJECT*/
-  .slider-2{
-    margin-top: -355px;
-  }
-  .desc-3{
-    margin-left: 780px;
-  }
-  /*FOURTH PROJ*/
-  .slider-3{
-    margin-top:-380px;
-  }
-  .desc-4{
-    margin-right: 850px;
-  }
-  /*FOURTH PROJ*/
-  .desc-5{
-    margin-left: 780px;
-  }
-}
-  
-
-
