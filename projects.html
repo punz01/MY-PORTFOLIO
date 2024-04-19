@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-PORTFOLIO</title>
+    <link rel = "stylesheet" type="text/css" href="projects.css">
+</head>
+<body>
+     <!--NAVIGATION-->
+     <nav>
+        <div class="logo">
+            <a href="index.html">
+            <img src = "images/logo.png" class="hello">
+        </a>
+        </div>
+        <ul id="menuList">
+            <li><a href="index.html">HOME</a></li>
+            <li><a class="active" href="projects.html">PROJECTS</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+        </ul>
+        <div class="menu-icon">
+            <i class="fa-solid fa-bars" onclick="toggleMenu()"></i>
+        </div>
+    </nav>
+
+    <script>
+        let menuList = document.getElementById("menuList")
+        menuList.style.maxHeight = "0px";
+
+        function toggleMenu(){
+            if(menuList.style.maxHeight == "0px")
+            {
+                menuList.style.maxHeight = "300px";
+            }
+            else{
+                menuList.style.maxHeight = "0px";
+            }
+        }
+    </script>
+
+    <script src = "https://kit.fontawesome.com/f8e1a90484.js" crossorigin="anonyomous"></script>
+    <div class="title">
+        <h1>My Projects</h1>
+    </div>
+    <div class="container">
+            <img src="images/image1.png" class="proj-1">
+        <div class="text-1">
+            <h2>Project 1: <span style="color: red;">Car Guys Cave</span></h2>
+            <p>
+                For my project on Dynamic Web Applications, I utilized Wordpress to build a website showcasing Japanese Domestic Market cars, detailing their names, histories, prices, and engine specifications. Despite the initial challenge, as I designed more pages, I found enjoyment and comfort in using Wordpress.</p>
+                <div class="social">
+                    <a class="link" href="https://carguyscave0.wordpress.com/" target ="_blank"><i class="fa solid fa-link"></i></a>
+                </div>
+        </div>
+    </div>
+    <div class="container">
+            <img src="images/image4.png" class="proj-1">
+        <div class="text-1">
+            <h2>Project 2: <span style="color: red;">Raw Photography</span></h2>
+            <p>
+                In the Web Search Engine Optimization and Analytics course project, we're concentrating on a photography website, publishing blogs to boost engagement. Using Wordpress again, I'm tasked with designing and arranging pages to improve search engine ranking and analytics.</p>
+                <div class="social">
+                    <a class="link" href="https://rawwphotog.com/" target ="_blank"><i class="fa solid fa-link"></i></a>
+                </div>
+        </div>
+    </div>
+    <div class="container">
+            <img src="images/image7.png" class="proj-1">
+        <div class="text-1">
+            <h2>Project 3: <span style="color: red;">Kings of the Court Camp</span></h2>
+            <p>
+                In my initial website project for Web Technologies, users can enroll in home basketball training, accessing tutorials and schedules. Developed in Visual Studio Code using HTML & CSS, I encountered language challenges at first but have since been steadily mastering new CSS properties with each project.</p>
+                <div class="social">
+                    <a class="link" href="https://github.com/punz01" target ="_blank"><i class="fab fa-github"></i></a>
+                </div>
+        </div>
+    </div>
+    <div class="container">
+            <img src="images/image9.png" class="proj-1">
+        <div class="text-1">
+            <h2>Project 4: <span style="color: red;">Victory Fit</span></h2>
+            <p>
+                This collaborative project merges Dynamic Web Applications, Development Tools, and Information Management, focusing on a Gym website. Users can sign up, select coaches for personalized workouts and schedules, and purchase supplements from our store. Developed in Visual Studio Code, utilizing HTML, CSS, PHP, and MySQL, my role in the group is to enhance frontend engagement.</p>
+                <div class="social">
+                    <a class="link" href="https://github.com/punz01" target ="_blank"><i class="fab fa-github"></i></a>
+                </div>
+        </div>
+    </div>
+    <div class="container">
+            <img src="images/image12.png" class="proj-1">
+        <div class="text-1">
+            <h2>Project 5: <span style="color: red;">PPAR Review</span></h2>
+            <p>Inspired by Rotten Tomatoes, our project in Advanced Database Systems centers on anime ratings. Users can rate and review within selected genres after signing up. Developed in Visual Studio Code, using HTML, CSS, PHP, and MySQL, I'm responsible for crafting each page's frontend design.</p>
+                <div class="social">
+                    <a class="link" href="https://github.com/punz01" target ="_blank"><i class="fab fa-github"></i></a>
+                </div>
+        </div>
+    </div>
+    
+</body>
+</html>

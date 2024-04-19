@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-PORTFOLIO</title>
+    <link rel = "stylesheet" type="text/css" href="index.css">
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
+</head>
+<body>
+    <!--NAVIGATION-->
+    <nav>
+        <div class="logo">
+            <a href="index.html">
+            <img src = "images/logo.png" class="hello">
+        </a>
+        </div>
+        <ul id="menuList">
+            <li><a class="active" href="index.html">HOME</a></li>
+            <li><a href="projects.html">PROJECTS</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+        </ul>
+        <div class="menu-icon">
+            <i class="fa-solid fa-bars" onclick="toggleMenu()"></i>
+        </div>
+    </nav>
+
+    <script>
+        let menuList = document.getElementById("menuList")
+        menuList.style.maxHeight = "0px";
+
+        function toggleMenu(){
+            if(menuList.style.maxHeight == "0px")
+            {
+                menuList.style.maxHeight = "300px";
+            }
+            else{
+                menuList.style.maxHeight = "0px";
+            }
+        }
+    </script>
+    <script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script>
+    <div class="elfsight-app-04b32ceb-c7bb-4096-a54c-960bdadaa1c5" data-elfsight-app-lazy></div>
+
+    <script src = "https://kit.fontawesome.com/f8e1a90484.js" crossorigin="anonyomous"></script>
+    <!--HOME-->
+    <section class="section">
+        <div class="section__container">
+          <div class="content">
+            <p class="subtitle">HELLO WORLD,</p>
+            <h1 class="title">
+              I'm <span>Aaron Punzalan,</span><br> a <span>Front-End Web Developer</span>
+            </h1>
+            <p class="description">
+                Welcome to my Portfolio! Dive into this portfolio to uncover a compilation of my projects, resume, and all the details about who I am. 
+                It goes beyond being a mere display of my work; it's an open invitation to connect. If any of the projects resonate with you or if you have thoughts to share, 
+                I'm eager to hear from you. Let's come together, spark innovation, and craft something truly exceptional! Thank you for looking into my creative portfolio. Enjoy the journey!
+            </p>
+            </p>
+            <div class="action__btns">
+                <a href="projects.html">
+              <button class="hire__me">My Projects</button>
+                </a>
+                <a href="images/Resume at Letterhead .pdf" download class="btn1 btn2">
+              <button class="portfolio">Resume and Cover Letter</button>
+                </a>
+            </div>
+          </div>
+          <div class="image">
+            <img src="images/home.JPG" alt="profile" />
+          </div>
+        </div>
+    </section>
+    <section class="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="title">TESTIMONIALS</h2>
+            </div>
+            <div class="testimonials-content">
+                <div class="swiper testimonials-slider js-testimonials-slider">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide testimonials-item">
+                            <div class="info">
+                              <img src="images/louis.jpg">
+                              <div class="text-box">
+                                  <h3 class="name">Louis Jae Garcia</h3>
+                                  <span class="job">Classmate</span>
+                              </div>  
+                            </div>
+                            <p>"Aaron is efficient when it comes to group tasks. His dedication to our team's success is truly commendable. I've consistently been impressed by his attention to detail, creativity in problem-solving."</p>
+                            <div class="rating">
+
+                            </div>
+                        </div>
+                        <div class="swiper-slide testimonials-item">
+                            <div class="info">
+                              <img src="images/archie.jpg">
+                              <div class="text-box">
+                                  <h3 class="name">Archie Custodio</h3>
+                                  <span class="job">Classmate</span>
+                              </div>  
+                            </div>
+                            <p>"He is a great teammate, he devoted himself to this work and he really is a very good developer and fun to be with." </p>
+                            <div class="rating">
+                                
+                            </div>
+                        </div>
+                        <div class="swiper-slide testimonials-item">
+                            <div class="info">
+                              <img src="images/rymbrent.jpg">
+                              <div class="text-box">
+                                  <h3 class="name">Rymbrent Rabano</h3>
+                                  <span class="job">Classmate</span>
+                              </div>  
+                            </div>
+                            <p>"He is great when it comes to helping friend it is good for the company if the other team has a problem, Aaron can help them to Solve it." </p>
+                            <div class="rating">
+                                
+                            </div>
+                        </div>
+                        <div class="swiper-slide testimonials-item">
+                            <div class="info">
+                              <img src="images/patrick.jpg">
+                              <div class="text-box">
+                                  <h3 class="name">Patrick Villanueva</h3>
+                                  <span class="job">Classmate</span>
+                              </div>  
+                            </div>
+                            <p>"Aaron is a creative thinker and open-minded when it comes to designing. He is an independent individual who excels at being adaptable and flexible in a lot of things."</p>
+                            <div class="rating">
+                                
+                            </div>
+                        </div>
+                        <div class="swiper-slide testimonials-item">
+                            <div class="info">
+                              <img src="images/renz.jpg">
+                              <div class="text-box">
+                                  <h3 class="name">Renz Vitug</h3>
+                                  <span class="job">Classmate</span>
+                              </div>  
+                            </div>
+                            <p>"Very neat and nice portfolio, every buttons are functional. And this person have great skills with html and css basing the website and projects." </p>
+                            <div class="rating">
+                                
+                            </div>
+                        </div>
+                        <div class="swiper-slide testimonials-item">
+                            <div class="info">
+                              <img src="images/pat.jpg">
+                              <div class="text-box">
+                                  <h3 class="name">Patrick Perez</h3>
+                                  <span class="job">Classmate</span>
+                              </div>  
+                            </div>
+                            <p>"He has a good programming skills. A fast-learner and very devoted in becoming a web developer." </p>
+                            <div class="rating">
+                                
+                            </div>
+                        </div>
+                        <div class="swiper-slide testimonials-item">
+                            <div class="info">
+                              <img src="images/jv.jpg">
+                              <div class="text-box">
+                                  <h3 class="name">J Victorino Zulueta</h3>
+                                  <span class="job">Classmate</span>
+                              </div>  
+                            </div>
+                            <p>"Aaron Punzalan is a talented front-end developer who brings both beautiful design and a strong work ethic to every project. He is a quick learner and constantly improve their skills, making them a valuable asset to any team." </p>
+                            <div class="rating">
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination js-testimonials-pagination"></div>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.js-testimonials-slider', {
+            grabCursor: true,
+            spaceBetween:30,
+            pagination:{
+                el: '.js-testimonials-pagination',
+                clickable: true
+            },
+            breakpoints:{
+                767:{
+                    slidesPerView: 2
+                }
+            }
+        });
+    </script>
+    </body>
+  </html>

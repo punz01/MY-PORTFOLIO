@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-PORTFOLIO</title>
+    <link rel = "stylesheet" type="text/css" href="about.css">
+    <script src="https://kit.fontawesome.com/adfffc35ab.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!--NAVIGATION-->
+    <nav>
+        <div class="logo">
+            <a href="index.html">
+            <img src = "images/logo.png" class="hello">
+        </a>
+        </div>
+        <ul id="menuList">
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="projects.html">PROJECTS</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+            <li><a class="active" href="about.html">ABOUT</a></li>
+        </ul>
+        <div class="menu-icon">
+            <i class="fa-solid fa-bars" onclick="toggleMenu()"></i>
+        </div>
+    </nav>
+
+    <script>
+        let menuList = document.getElementById("menuList")
+        menuList.style.maxHeight = "0px";
+
+        function toggleMenu(){
+            if(menuList.style.maxHeight == "0px")
+            {
+                menuList.style.maxHeight = "300px";
+            }
+            else{
+                menuList.style.maxHeight = "0px";
+            }
+        }
+    </script>
+
+    <script src = "https://kit.fontawesome.com/f8e1a90484.js" crossorigin="anonyomous"></script>
+     <div class="section">
+         <div class="container">
+             <div class="title">
+                 <h1>About Me</h1>
+             </div>
+             <div class="content">
+                 <div class="article">
+                     <h3>Hello Everyone! My name is Aaron Punzalan, a third year student from Holy Angel University.
+                      I am currently taking Bachelor of Science in Information Tecnhology Major in Web Development. 
+                      I am an aspiring front-end web developer. Being a web development student, I encounter many challenges or bugs that occur in my code.
+                      Those challenges are the stepping stones that I needed to help me build interactive and responsive web applications. 
+                      This course is like a rollercoaster ride because there are many ups and down situation. 
+                      One time your code will work and the next time you try it, many errors will occur. 
+                      As a web development student, the process involves a continual trial and error journey. 
+                      Each debugging session and code revision serves as a valuable lesson.</h3>
+                      <div class="button"> 
+                          <a href="#more">See More</a>
+                      </div>
+                 </div>
+             </div>
+             <div class="image-section">
+                 <img src="images/about.jpg">
+             </div>
+             <div class="social">
+                 <a class="fb" href="https://www.facebook.com/aaron.punzalan05" target ="_blank"><i class="fab fa-facebook-f"></i></a>
+                 <a class="ig" href="https://www.instagram.com/definitelynotpunz/" target ="_blank"><i class="fab fa-instagram"></i></a>
+                 <a class="git" href="https://github.com/punz01" target ="_blank"><i class="fab fa-github"></i></a>
+             </div>
+         </div>
+     </div>
+
+     <!--SKILLS-->
+    <section class="see" id="more">
+         <div class="skill">
+             <h1>SKILLS</h1>
+
+             <li><h3>Hardwork</h3>
+                <span class="bar"><span class="hard"></span></span>
+            </li>
+            <li><h3>Teamwork</h3>
+                <span class="bar"><span class="team"></span></span>
+            </li>
+            <li><h3>Wordpress</h3>
+                <span class="bar"><span class="word"></span></span>
+            </li>
+            <li><h3>HTML & CSS</h3>
+                <span class="bar"><span class="html"></span></span>
+            </li>
+            <li><h3>Creativity</h3>
+                <span class="bar"><span class="create"></span></span>
+            </li>
+            <li><h3>UI Design</h3>
+                <span class="bar"><span class="uiux"></span></span>
+            </li>
+            <li><h3>Attention to Detail</h3>
+                <span class="bar"><span class="detail"></span></span>
+            </li>
+         </div>
+     <!--EDUCATION-->
+        <div class="educ">
+            <h2>EDUCATION</h2>
+
+            <h3>ELEMENTARY</h3>
+            <ul>
+               <li><span style="color:black">2009-2011|</span><span style="color:red">ANGELES ELEMENTARY SCHOOL</span></li>
+               <li><span style="color:black">2011-2014|</span><span style="color:red">HOLY ANGEL UNIVERSITY</span></li>
+           </ul>
+            <h3>JUNIOR HIGH SCHOOL</h3>
+           <ul>
+               <li><span style="color:black">2015-2019|</span><span style="color:red">HOLY ANGEL UNIVERSITY</span></li>
+           </ul>
+            <h3>SENIOR HIGH SCHOOL</h3>
+            <ul>
+                <li><span style="color:black">2019-2021|</span><span style="color:red">HOLY ANGEL UNIVERSITY</span></li>
+            </ul>
+            <h3>COLLEGE</h3>
+            <ul>
+                <li><span style="color:black">2021-Current|</span><span style="color:red">HOLY ANGEL UNIVERSITY</span></li>
+            </ul>
+        </div>
+     <!--HOBBIES-->
+        <div class="hobb">
+            <h1>HOBBIES</h1>
+
+            <li><h3>Listening to Music</h3>
+                <span class="bar"><span class="music"></span></span>
+            </li>
+            <li><h3>Photography</h3>
+                <span class="bar"><span class="photo"></span></span>
+            </li>
+            <li><h3>Designing</h3>
+                <span class="bar"><span class="design"></span></span>
+            </li>
+            <li><h3>Playing Online Games</h3>
+                <span class="bar"><span class="games"></span></span>
+            </li>
+            <li><h3>Playing Basketball</h3>
+                <span class="bar"><span class="bball"></span></span>
+            </li>
+        </div>
+    </section>
+    
+</body>
+</html>

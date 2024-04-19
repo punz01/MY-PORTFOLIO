@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-PORTFOLIO</title>
+    <link rel = "stylesheet" type="text/css" href="contact.css">
+</head>
+<body>
+     <!--NAVIGATION-->
+     <nav>
+        <div class="logo">
+            <a href="index.html">
+            <img src = "images/logo.png" class="hello">
+        </a>
+        </div>
+        <ul id="menuList">
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="projects.html">PROJECTS</a></li>
+            <li><a class="active" href="contact.html">CONTACT</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+        </ul>
+        <div class="menu-icon">
+            <i class="fa-solid fa-bars" onclick="toggleMenu()"></i>
+        </div>
+    </nav>
+
+    <script>
+        let menuList = document.getElementById("menuList")
+        menuList.style.maxHeight = "0px";
+
+        function toggleMenu(){
+            if(menuList.style.maxHeight == "0px")
+            {
+                menuList.style.maxHeight = "300px";
+            }
+            else{
+                menuList.style.maxHeight = "0px";
+            }
+        }
+    </script>
+
+    <script src = "https://kit.fontawesome.com/f8e1a90484.js" crossorigin="anonyomous"></script>
+
+    <section class="contact">
+        <div class="container">
+            <h1>Contact Me</h1>
+            <div class="contact-wrapper">
+                <div class="contact-form">
+                    <h3>Get in touch with me</h3>
+                    <form action="https://api.web3forms.com/submit" method="POST">
+                        <input type="hidden" name="access_key" value="2e831517-dcd8-407d-a27e-0ccbc25fb18d">
+                        <div class="form-group">
+                            <input type="text" name="name" placeholder="Full Name" required="required">
+                        </div>
+                        <div class="form-group">
+                            <input type="email" name="email" placeholder="Email" required="required">
+                        </div>
+                        <div class="form-group">
+                            <textarea name="message" placeholder="Message/Concern"></textarea>
+                        </div>
+                        <button type="submit">Send</button>
+                    </form>
+                </div>
+                <div class="contact-info">
+                    <h3>Contact Information</h3>
+                    <p><i class="fas fa-phone"></i> +63 961 260 9123</p>
+                    <p><i class="fas fa-envelope"></i> apunzalan500@gmail.com</p>
+                    <p><i class="fas fa-map-marker-alt"></i> 4011 Lot 10-C Evergreen Compound, Purok 4 Brgy. Mining, Angeles City, Pampanga</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
