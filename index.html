@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>E-PORTFOLIO</title>
+    <link rel="icon" href="images/logo-1.png" type="image/icon type">
     <link rel = "stylesheet" type="text/css" href="index.css">
     <link
   rel="stylesheet"
@@ -44,6 +45,7 @@
             }
         }
     </script>
+    
     <script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script>
     <div class="elfsight-app-04b32ceb-c7bb-4096-a54c-960bdadaa1c5" data-elfsight-app-lazy></div>
 
@@ -64,9 +66,9 @@
             </p>
             <div class="action__btns">
                 <a href="projects.html">
-              <button class="hire__me">My Projects</button>
+              <button class="hire__me">View Projects</button>
                 </a>
-                <a href="images/Resume at Letterhead .pdf" download class="btn1 btn2">
+                <a href="images/Resume and Letterhead.pdf" download class="btn1 btn2">
               <button class="portfolio">Resume and Cover Letter</button>
                 </a>
             </div>
@@ -76,10 +78,11 @@
           </div>
         </div>
     </section>
+
     <section class="testimonials">
         <div class="container">
             <div class="section-header">
-                <h2 class="title">TESTIMONIALS</h2>
+                <h1 class="title">Testimonials</h1>
             </div>
             <div class="testimonials-content">
                 <div class="swiper testimonials-slider js-testimonials-slider">
@@ -92,10 +95,7 @@
                                   <span class="job">Classmate</span>
                               </div>  
                             </div>
-                            <p>"Aaron is efficient when it comes to group tasks. His dedication to our team's success is truly commendable. I've consistently been impressed by his attention to detail, creativity in problem-solving."</p>
-                            <div class="rating">
-
-                            </div>
+                            <p>"Aaron is highly efficient in group tasks, with a commendable dedication to the team's success and impressive attention to detail and creativity."</p>
                         </div>
                         <div class="swiper-slide testimonials-item">
                             <div class="info">
@@ -106,9 +106,7 @@
                               </div>  
                             </div>
                             <p>"He is a great teammate, he devoted himself to this work and he really is a very good developer and fun to be with." </p>
-                            <div class="rating">
-                                
-                            </div>
+                            
                         </div>
                         <div class="swiper-slide testimonials-item">
                             <div class="info">
@@ -119,9 +117,7 @@
                               </div>  
                             </div>
                             <p>"He is great when it comes to helping friend it is good for the company if the other team has a problem, Aaron can help them to Solve it." </p>
-                            <div class="rating">
-                                
-                            </div>
+                            
                         </div>
                         <div class="swiper-slide testimonials-item">
                             <div class="info">
@@ -131,10 +127,7 @@
                                   <span class="job">Classmate</span>
                               </div>  
                             </div>
-                            <p>"Aaron is a creative thinker and open-minded when it comes to designing. He is an independent individual who excels at being adaptable and flexible in a lot of things."</p>
-                            <div class="rating">
-                                
-                            </div>
+                            <p>"Aaron is a creative designer who approaches projects with an open mind. He excels at being adaptable and flexible, allowing him to handle various challenges independently."</p>
                         </div>
                         <div class="swiper-slide testimonials-item">
                             <div class="info">
@@ -145,9 +138,6 @@
                               </div>  
                             </div>
                             <p>"Very neat and nice portfolio, every buttons are functional. And this person have great skills with html and css basing the website and projects." </p>
-                            <div class="rating">
-                                
-                            </div>
                         </div>
                         <div class="swiper-slide testimonials-item">
                             <div class="info">
@@ -158,9 +148,6 @@
                               </div>  
                             </div>
                             <p>"He has a good programming skills. A fast-learner and very devoted in becoming a web developer." </p>
-                            <div class="rating">
-                                
-                            </div>
                         </div>
                         <div class="swiper-slide testimonials-item">
                             <div class="info">
@@ -170,14 +157,10 @@
                                   <span class="job">Classmate</span>
                               </div>  
                             </div>
-                            <p>"Aaron Punzalan is a talented front-end developer who brings both beautiful design and a strong work ethic to every project. He is a quick learner and constantly improve their skills, making them a valuable asset to any team." </p>
-                            <div class="rating">
-                                
-                            </div>
+                            <p>"Aaron Punzalan is a talented front-end developer known for his strong work ethic, quick learning, and beautiful design skills, making him a valuable asset to any team." </p>
                         </div>
                     </div>
                 </div>
-                <div class="swiper-pagination js-testimonials-pagination"></div>
             </div>
         </div>
     </section>
@@ -186,14 +169,23 @@
     <script>
         const swiper = new Swiper('.js-testimonials-slider', {
             grabCursor: true,
-            spaceBetween:30,
-            pagination:{
+            spaceBetween: 30, // Adjust this value if necessary to provide more space between slides
+            slidesPerView: 1,
+            loop: true, // Enable continuous loop mode
+            pagination: {
                 el: '.js-testimonials-pagination',
-                clickable: true
+                clickable: true,
             },
-            breakpoints:{
-                767:{
-                    slidesPerView: 2
+            autoplay: {
+                delay: 3000, // Time between slides in milliseconds (3 seconds)
+                disableOnInteraction: false, // Continue autoplay after user interaction
+            },
+            breakpoints: {
+                767: {
+                    slidesPerView: 2, 
+                },
+                1024: {
+                    slidesPerView: 3, 
                 }
             }
         });
